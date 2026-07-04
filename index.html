@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Voting System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1><b1> ELECTRONIC VOTING MACHINE</b1></h1>
+    <h3>Secure • Transparent • Efficient</h3>
+
+    <div class="card">
+
+        <h2>Voter Details :</h2>
+
+        <input type="text" id="name" placeholder="Enter Your Name">
+
+        <input type="number" id="age" placeholder="Enter Your Age">
+
+        <h2>Select Leader:</h2>
+
+        <div class="candidate" onclick="selectCandidate(0)">
+            🌟SHRESTH GUPTA        
+        </div>
+
+        <div class="candidate" onclick="selectCandidate(1)">
+            🚀 SHOURYA RASTOGI
+        </div>
+
+        <div class="candidate" onclick="selectCandidate(2)">
+            🌿 SHAILESH PRAJAPATI
+        </div>
+
+        <div class="candidate" onclick="selectCandidate(3)">
+            ⭐ DIVYAM RASTOGI
+        </div>
+
+        <div class="candidate" onclick="selectCandidate(4)">
+            🤝 AKHIL SONALKI
+        </div>
+
+        <button id="voteBtn" onclick="vote()" disabled>
+            Submit Vote
+        </button>
+
+        <button class="countBtn" onclick="countVotes()">
+            Count Votes
+        </button>
+
+        <button class="resetBtn" onclick="resetVotes()">
+            Reset Election
+        </button>
+
+    </div>
+
+    <div class="results">
+
+        <h2>📊 Results</h2>
+
+        <div id="winner"></div>
+
+        <div id="resultArea"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
